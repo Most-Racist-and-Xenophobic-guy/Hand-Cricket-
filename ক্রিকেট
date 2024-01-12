@@ -38,9 +38,9 @@ if toss == 1:
         if x==y and y>0 and y<=6:
             w1+=1
         ball+=1
-        r1=r1+penalty
         if r1>r:
             break
+    r1=r1+penalty
     print ("Computer scored ", r1 , " runs")
     sr=ball/w
     print ("Your bowling strike rate:", sr)
@@ -86,9 +86,9 @@ if toss==2:
         if x==y :
             w+=1
         balls=balls+1
-        r1=r1+penalty
-        if r>r1:
+        if r>(r1+penalty):
             break
+    r1=r1+penalty
     print ("You scored ", r , " runs")
     strike_rate=(r/balls)
     print("Your batting strike rate: " , strike_rate)
