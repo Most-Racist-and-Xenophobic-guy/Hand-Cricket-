@@ -32,6 +32,7 @@ if toss == 1:
         print ("Computer selected:", x)
         if y>6 or y<1:
             penalty=penalty+1
+            ball=ball-1
         if x!=y:
             r1=r1+x
         if x==y and y>0 and y<=6:
@@ -60,6 +61,7 @@ if toss==2:
         print ("Computer selected:", x)
         if y>6 or y<1:
             penalty=penalty+1
+            ball=ball-1
         if x!=y:
             r1=r1+x
         if x==y and y>0 and y<=6:
