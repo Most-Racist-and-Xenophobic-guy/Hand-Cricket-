@@ -42,8 +42,9 @@ if toss == 1:
             break
     r1=r1+penalty
     print ("Computer scored ", r1 , " runs")
-    sr=ball/w
-    print ("Your bowling strike rate:", sr)
+    if w!=0:
+        sr=ball/w
+        print ("Your bowling strike rate:", sr)
     if (r>r1):
         print ("You won")
     if (r1>r):
@@ -69,8 +70,9 @@ if toss==2:
         ball+=1
         r1=r1+penalty
     print ("Computer scored ", r1 , " runs")
-    sr=ball/w1
-    print ("Your bowling strike rate:", sr)
+    if w1!=0:
+        sr=ball/w1
+        print ("Your bowling strike rate:", sr)
     print ("You are batting ")
     print ("DISCLAIMER: Entering numbers out of range will result in penalty for the opponent, as it is considered unfair means of game")    
     w,r=0,0
