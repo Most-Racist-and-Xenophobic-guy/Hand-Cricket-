@@ -21,6 +21,7 @@ if toss == 1:
             r=r+y
         if x==y:
             w+=1
+        print ("Score:", r , '/', w, 'ball:', balls+1)
         balls=balls+1
     print ("You scored ", r , " runs")
     strike_rate=(r/balls)*100
@@ -40,6 +41,7 @@ if toss == 1:
             r1=r1+x
         if x==y and y>0 and y<=6:
             w1+=1
+        print ("Score:", r1, '/', w1, 'ball:', ball+1)      
         ball+=1
         if r1>r:
             break
@@ -105,6 +107,7 @@ if toss==2:
             r1=r1+x
         if x==y and y>0 and y<=6:
             w1+=1
+        print ("Score:", r1, '/', w1, 'ball:', ball+1)
         ball+=1
         r1=r1+penalty
     print ("Computer scored ", r1 , " runs")
@@ -125,6 +128,7 @@ if toss==2:
             r=r+y
         if x==y :
             w+=1
+        print ("Score:", r , '/', w, 'ball:', balls+1)
         balls=balls+1
         if r>(r1+penalty):
             break
