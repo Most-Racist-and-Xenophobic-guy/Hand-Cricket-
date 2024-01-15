@@ -8,6 +8,7 @@ toss=random.randint(1,2)
 penalty=0
 if toss == 1:
     print ("You are batting first")
+    print("")
     print ("DISCLAIMER: Entering numbers out of range will result in penalty for the opponent, as it is considered unfair means of game")
     w,r=0,0
     balls=0
@@ -51,9 +52,9 @@ if toss == 1:
         sr=ball/w
         print ("Your bowling strike rate:", sr)
     if (r>r1):
-        print ("You won")
+        print ("You won by ", r-r1, " runs")
     if (r1>r):
-        print ("You lost")
+        print ("Computer won by ", n-w1, " wickets")
     if (r1==r):
         print ("Match tied")
         print("Superover begins")
@@ -115,6 +116,7 @@ if toss==2:
         sr=ball/w1
         print ("Your bowling strike rate:", sr)
     print ("You are batting ")
+    print("")
     print ("DISCLAIMER: Entering numbers out of range will result in penalty for the opponent, as it is considered unfair means of game")    
     w,r=0,0
     balls=0
@@ -138,9 +140,9 @@ if toss==2:
     print("Your batting strike rate: " , strike_rate)
     print ("Computer scored ", r1 , " runs (including penalty)")
     if (r>r1):
-        print ("You won")
+        print ("You won by ", n-w, " wickets")
     if (r1>r):
-        print ("You lost")
+        print ("Computer won by ",r1-r, " runs")
     if (r1==r):
         print ("Match tied")
         print("Superover begins")
