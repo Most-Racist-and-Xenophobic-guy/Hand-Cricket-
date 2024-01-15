@@ -87,7 +87,7 @@ if toss == 1:
             print("You won")
         if run_so<run1_so:
             print("Comp won")
-        if run_so=run1_so:
+        if run_so==run1_so:
             print("Superover tied")
     
 if toss==2:
@@ -172,6 +172,6 @@ if toss==2:
             print("You won")
         if run_so<run1_so:
             print("Comp won")
-        if run_so=run1_so:
+        if run_so==run1_so:
             print("Superover tied")
             
