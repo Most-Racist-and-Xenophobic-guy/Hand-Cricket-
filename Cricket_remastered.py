@@ -105,17 +105,17 @@ if toss == 1:
             else:
                 print("Match Tied")
                 if bound_c_user>bound_c_comp:
-                print("You won by boundary count")
+                    print("You won by boundary count")
                 elif bound_c_user<bound_c_comp:
-                print("Comp won by boundary count")
+                    print("Comp won by boundary count")
                 else:
-                print("Match Tied:")
-                if w+wckt_1>w1+wckt:
-                    print("Comp won by less wicket count")
-                elif w1+wckt>w+wckt_1:
-                    print("You won by less wicket count")
-                else:
-                    print("Match tied: No conclusive result after three tiebreaker attempt")
+                    print("Match Tied:")
+                    if w+wckt_1>w1+wckt:
+                        print("Comp won by less wicket count")
+                    elif w1+wckt>w+wckt_1:
+                        print("You won by less wicket count")
+                    else:
+                        print("Match tied: No conclusive result after three tiebreaker attempt")
     
 if toss==2:
     print("You are bowling first")
