@@ -68,12 +68,12 @@ if toss == 1:
         ball,wckt=0,0
         run1_so=0
         while (ball<6) and (wckt<2):
-            y_so=random.randint(1,6)
-            x_so=int(input("Choose number between 0 to 6:"))
-            print ("Computer chose:",x)
+            y_so=random.randint(0,6)
+            x_so=int(input("Choose number between 1 to 6:"))
+            print ("Computer chose:",y_so)
             if run1_so<=6 and run1_so>=0:
                 if x!=y:
-                    run1_so=run1_so+y
+                    run1_so=run1_so+y_so
                 if x==y:
                     wckt+=1
             ball+=1
@@ -84,38 +84,32 @@ if toss == 1:
         while (ball<6) and (wckt_1<2):
             x_so=random.randint(1,6)
             y_so=int(input("Choose number between 0 to 6:"))
-            print ("Computer chose:",x)
+            print ("Computer chose:",x_so)
             if run_so<=6 and run_so>=0:
                 if x!=y:
-                    run_so=run_so+y
+                    run_so=run_so+y_so
                 if x==y:
                     wckt_1+=1
             ball+=1
         print("You scored: ", run_so)
         if run_so>run1_so:
-            print("You won")
+            print("You won superover")
         if run_so<run1_so:
-            print("Comp won")
+            print("Comp won superover")
         if run_so==run1_so:
             print("Superover tied")
             if bound_c_user>bound_c_comp:
-                print("You won")
+                print("You won by boundary count")
             elif bound_c_user<bound_c_comp:
-                print("Comp won")
+                print("Comp won by boundary count")
             else:
-                print("Match Tied")
-                if bound_c_user>bound_c_comp:
-                    print("You won by boundary count")
-                elif bound_c_user<bound_c_comp:
-                    print("Comp won by boundary count")
+                print("Match Tied:")
+                if w+wckt_1>w1+wckt:
+                    print("Comp won by less wicket count")
+                elif w1+wckt>w+wckt_1:
+                    print("You won by less wicket count")
                 else:
-                    print("Match Tied:")
-                    if w+wckt_1>w1+wckt:
-                        print("Comp won by less wicket count")
-                    elif w1+wckt>w+wckt_1:
-                        print("You won by less wicket count")
-                    else:
-                        print("Match tied: No conclusive result after three tiebreaker attempt")
+                    print("Match tied: No conclusive result after three tiebreaker attempt")
     
 if toss==2:
     print("You are bowling first")
@@ -194,7 +188,7 @@ if toss==2:
         while (ball<6) and (wckt<2):
             y_so=random.randint(1,6)
             x_so=int(input("Choose number between 0 to 6:"))
-            print ("Computer chose:",x)
+            print ("Computer chose:",y_so)
             if run1_so<=6 and run1_so>=0:
                 if x!=y:
                     run1_so=run1_so+y
