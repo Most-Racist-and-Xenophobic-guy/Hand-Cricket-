@@ -186,13 +186,13 @@ if toss==2:
         ball,wckt=0,0
         run1_so=0
         while (ball<6) and (wckt<2):
-            y_so=random.randint(1,6)
-            x_so=int(input("Choose number between 0 to 6:"))
+            y_so=random.randint(0,6)
+            x_so=int(input("Choose number between 1 to 6:"))
             print ("Computer chose:",y_so)
             if run1_so<=6 and run1_so>=0:
-                if x!=y:
+                if x_so!=y_so:
                     run1_so=run1_so+y_so
-                if x==y:
+                if x_so==y_so:
                     wckt+=1
             ball+=1
         print("Comp scored: ", run1_so)
