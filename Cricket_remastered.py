@@ -191,7 +191,7 @@ if toss==2:
             print ("Computer chose:",y_so)
             if run1_so<=6 and run1_so>=0:
                 if x!=y:
-                    run1_so=run1_so+y
+                    run1_so=run1_so+y_so
                 if x==y:
                     wckt+=1
             ball+=1
