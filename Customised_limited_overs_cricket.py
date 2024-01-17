@@ -57,42 +57,7 @@ if toss == 1:
         print ("Computer won by ", n-w1, " wickets")
     if (r1==r):
         print ("Match tied")
-        print("Superover begins")
-        print("You are bowling first")
-        ball,wckt=0,0
-        run1_so=0
-        while (ball<6) and (wckt<2):
-            y_so=random.randint(1,6)
-            x_so=int(input("Choose number between 0 to 6:"))
-            print ("Computer chose:",x)
-            if run1_so<=6 and run1_so>=0:
-                if x!=y:
-                    run1_so=run1_so+y
-                if x==y:
-                    wckt+=1
-            ball+=1
-        print("Comp scored: ", run1_so)
-        ball,wckt=0,0
-        run_so=0
-        print ("You are batting now")
-        while (ball<6) and (wckt<2):
-            x_so=random.randint(1,6)
-            y_so=int(input("Choose number between 0 to 6:"))
-            print ("Computer chose:",x)
-            if run_so<=6 and run_so>=0:
-                if x_so!=y_so:
-                    run_so=run_so+y
-                if x_so==y_so:
-                    wckt+=1
-            ball+=1
-        print("You scored: ", run_so)
-        if run_so>run1_so:
-            print("You won")
-        if run_so<run1_so:
-            print("Comp won")
-        if run_so==run1_so:
-            print("Superover tied")
-    
+   
 if toss==2:
     print("You are bowling first")
     w1,r1=0,0
@@ -145,39 +110,5 @@ if toss==2:
         print ("Computer won by ",r1-r, " runs")
     if (r1==r):
         print ("Match tied")
-        print("Superover begins")
-        ball,wckt=0,0
-        run_so=0
-        print ("You are batting first")
-        while (ball<6) and (wckt<2):
-            x_so=random.randint(1,6)
-            y_so=int(input("Choose number between 0 to 6:"))
-            print ("Computer chose:",x)
-            if run_so<=6 and run_so>=0:
-                if x_so!=y_so:
-                    run_so=run_so+y
-                if x_so==y_so:
-                    wckt+=1
-            ball+=1
-        print("You scored: ", run_so)
-        print("You are bowling now")
-        ball,wckt=0,0
-        run1_so=0
-        while (ball<6) and (wckt<2):
-            y_so=random.randint(1,6)
-            x_so=int(input("Choose number between 0 to 6:"))
-            print ("Computer chose:",x_so)
-            if run1_so<=6 and run1_so>=0:
-                if x_so!=y_so:
-                    run1_so=run1_so+y
-                if x_so==y_so:
-                    wckt+=1
-            ball+=1
-        print("Comp scored: ", run1_so)
-        if run_so>run1_so:
-            print("You won")
-        if run_so<run1_so:
-            print("Comp won")
-        if run_so==run1_so:
-            print("Superover tied")
+
             
