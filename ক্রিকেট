@@ -18,7 +18,7 @@ if toss == 1:
             r=r+y
         if x==y:
             w+=1
-        balls=balls+1
+        balls=balls+
     print ("You scored ", r , " runs")
     strike_rate=(r/balls)*100
     print("Your batting strike rate: ", strike_rate)
